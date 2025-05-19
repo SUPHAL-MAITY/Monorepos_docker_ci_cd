@@ -18,6 +18,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ./my-turborepo/docker/Dockerfile.backend
+          file: ./docker/Dockerfile.backend
           push: true
           tags: suphal032/todo-app-backend:${{ github.sha }}
